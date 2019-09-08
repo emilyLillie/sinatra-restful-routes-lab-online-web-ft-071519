@@ -4,6 +4,10 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  get '/new' 
+  get '/recipe/new' do 
+    erb :new 
+  end 
+  
+  post '/recipe/new' do 
 
 end
